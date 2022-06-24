@@ -1,0 +1,130 @@
+.bicycle {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+#bicicleta .title p {
+    text-transform: uppercase;
+}
+
+.bicycle-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bicycle-images img {
+    flex: 1;
+    min-width: 200px;
+}
+
+.bicycle-images img:first-child {
+    min-width: 100%;
+}
+
+.bicycle-buy {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    justify-items: start;
+    gap: 8px 12px;
+}
+
+.bicycle-buy a {
+    grid-row: span 2;
+}
+
+.bicycle-buy span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--cor-12);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.bicycle-content h2 {
+    margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+}
+
+.bicycle-informations {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    background-color: var(--cor-12);
+    padding: 32px;
+    border-radius: 4px;
+}
+
+.bicycle-informations img {
+    height: 24px;
+}
+
+.bicycle-informations h3 {
+    margin-top: 4px;
+}
+
+.bicycle-informations p {
+    margin-top: 8px;
+}
+
+.bicycle-token {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-12);
+    border-radius: 4px;
+    padding: 32px;
+    gap: 12px;
+}
+
+.bicycle-token li {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.bicycle-token li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: var(--cor-11);
+    height: 1px;
+    width: 100%;
+    top: -6px;
+}
+
+.bicycle-token li:first-child::after {
+    display: none;
+}
+
+.bicycle-token li > span {
+    color: var(--cor-6);
+}
+
+@media (max-width: 800px) {
+    .bicycle {
+        grid-template-columns: 1fr;
+    }
+
+    .bicycle-images {
+        grid-row: 2;
+    }
+}
+
+@media (max-width: 800px) {
+    .bicycle-informations {
+        grid-template-columns: 1fr; 
+    }
+
+    .bicycle-buy {
+        grid-template-columns: 1fr; 
+    }
+}

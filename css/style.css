@@ -2,6 +2,7 @@
 @import "utilities/typography.css";
 @import "utilities/colors.css";
 @import "global/header.css";
+@import "global/footer.css";
 @import "home/introduction.css";
 @import "utilities/components.css";
 @import "bicycles/bicycles-list.css";
@@ -9,3 +10,8 @@
 @import "home/partners.css";
 @import "home/testimonial.css";
 @import "security/security.css";
+@import "termos/termos.css";
+@import "bicycles/bicycles.css";
+@import "security/benefits.css";
+@import "security/questions.css";
+@import "bicycle/bicycle.css";
